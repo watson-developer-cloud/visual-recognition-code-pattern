@@ -1,0 +1,73 @@
+[
+  {
+    "classifier_id": "default",
+    "name": "default",
+    "classes": [
+      {
+        "class": "fabric",
+        "score": 0.959
+      },
+      {
+        "class": "gray color",
+        "score": 0.946
+      },
+      {
+        "class": "Harris Tweed (jacket)",
+        "score": 0.87,
+        "type_hierarchy": "/fabric/Harris Tweed (jacket)"
+      },
+      {
+        "class": "clothing",
+        "score": 0.8
+      },
+      {
+        "class": "tweed",
+        "score": 0.791,
+        "type_hierarchy": "/fabric/tweed"
+      },
+      {
+        "class": "garment",
+        "score": 0.518
+      },
+      {
+        "class": "overgarment",
+        "score": 0.517
+      },
+      {
+        "class": "coat",
+        "score": 0.509
+      },
+      {
+        "class": "Norfolk jacket",
+        "score": 0.5,
+        "type_hierarchy": "/garment/overgarment/coat/Norfolk jacket"
+      }
+    ],
+    "display": "General Model",
+    "description": "Quickly understand objects, actions, scenes, and colors within an image."
+  },
+  {
+    "classifier_id": "food",
+    "name": "food",
+    "classes": [
+      {
+        "class": "non-food",
+        "score": 0.998
+      }
+    ],
+    "display": "Food Model",
+    "description": "Identify meals and food items with enhanced accuracy."
+  },
+  {
+    "classifier_id": "explicit",
+    "name": "explicit",
+    "classes": [
+      {
+        "class": "not explicit",
+        "score": 0.991
+      }
+    ],
+    "display": "Explicit Model",
+    "description": "Determine if an image contains nudity or other inappropriate content."
+  }
+]

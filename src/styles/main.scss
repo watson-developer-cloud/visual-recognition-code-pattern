@@ -1,0 +1,22 @@
+// Set theme
+@import '~@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+// vendors
+@import '~carbon-components/scss/globals/scss/styles.scss';
+
+// pages
+@import './index';
+
+// components
+@import './../components/Header/header';
+@import './../components/ImageContainer/image-container';
+@import './../components/ImagePanel/image-panel';
+@import './../components/ImagePicker/image-picker';
+@import './../components/Loader/loader';
+@import './../components/OutputContainer/output-container';
+@import './../components/ServiceContainer/service-container';
+@import './../components/ProgressBar/progress-bar';
+@import './../components/Toast/toast';
+@import './../components/UploadImage/upload-image';

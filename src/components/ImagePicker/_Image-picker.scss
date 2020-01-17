@@ -1,0 +1,20 @@
+@import './overrides';
+
+.image-picker__tiles {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 0.1rem;
+  @media (min-width: 1200px) {
+    flex: 1 1 auto;
+  }
+}
+
+.image-picker--section__tile {
+  position: relative;
+  display: flex;
+  min-width: 25%;
+}
+
+.image-picker--section__image {
+  width: 100%;
+}

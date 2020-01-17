@@ -1,0 +1,42 @@
+.output-container {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-08;
+  padding-bottom: $spacing-07 * 2;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    flex: 1 1 auto;
+    margin-left: $spacing-09;
+  }
+
+  &__control-panel {
+    padding-bottom: $spacing-09;
+  }
+
+  &__content-switch {
+    max-width: 10rem;
+  }
+
+  &__title {
+    padding-bottom: $spacing-09;
+  }
+}
+
+.pretty-json-container {
+  padding: $spacing-03;
+}
+
+.output-container__accordian-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: $gray-10;
+  padding: $spacing-05;
+}
+
+.output-container__accordian-item{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $gray-10;
+  padding: $spacing-04;
+}

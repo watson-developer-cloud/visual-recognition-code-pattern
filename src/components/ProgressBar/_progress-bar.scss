@@ -1,0 +1,32 @@
+$progress_label_width: 1.5rem;
+
+.bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 6rem;
+  min-width: 5rem;
+
+  .bar-full {
+    height: 0.5rem;
+    border: 1px solid $gray-100;
+    position: relative;
+    margin-right: 0.5rem;
+    width: calc(100% - #{$progress_label_width});
+
+    .bar {
+      background-color: $gray-100;
+      height: 100%;
+      position: absolute;
+      top: 0rem;
+      left: 0rem;
+    }
+  }
+
+  .progress {
+    width: $progress_label_width;
+    text-align: right;
+    margin-top: 0rem;
+    font-size: 0.8rem;
+  }
+}

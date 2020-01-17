@@ -1,0 +1,66 @@
+%load-dots {
+  content: "";
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: rgba(216,216,216,0.8);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  @media screen and (max-width:1056px) {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+@keyframes dot-left {
+  from { left: 50% }
+  30% { left: 44%; }
+  to { left: 50% }
+}
+
+@keyframes dot-right {
+  from { left: 50% }
+  30% { left: 56%; }
+  to { left: 50% }
+}
+
+// general loading animation dots
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 20;
+  top: 0;
+  left: 0;
+  .loader-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    min-height: 50px;
+    .loader-dots {
+      @extend %load-dots !optional;
+    }
+    .loader-message {
+      text-align: center;
+      position: absolute;
+      top: 100%;
+      width: 100%
+    }
+  }
+  &:before, &:after {
+    @extend %load-dots !optional;
+  }
+  &:before {
+    animation-name: dot-left;
+  }
+  &:after {
+    animation-name: dot-right;
+  }
+}
