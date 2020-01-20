@@ -10,7 +10,7 @@
 </p>
 </p>
 
-✨ **Demo:** https://visual-recognition-code-pattern.mybluemix.net/ ✨
+✨ **Demo:** https://visual-recognition-code-pattern.ng.bluemix/ ✨
 
 ### Flow
 
@@ -20,7 +20,7 @@
 
 1. User sends messages to the application (running locally, in the IBM Cloud).
 1. The application sends the user message to IBM Watson Visual Recognition service.
-1. Watson Visual Recognition processes the text or url and extract features such us keywords, concepts, categories. The service can be provisioned on IBM Cloud.
+1. Watson Visual Recognition uses deep learning algorithms to analyze images for scenes, objects, text, and other subjects. The service can be provisioned on IBM Cloud.
 
 ## Prerequisites
 
