@@ -10,7 +10,7 @@
 </p>
 </p>
 
-✨ **Demo:** https://visual-recognition-code-pattern.ng.bluemix/ ✨
+✨ **Demo:** https://visual-recognition-code-pattern.ng.bluemix.net/ ✨
 
 ### Flow
 
