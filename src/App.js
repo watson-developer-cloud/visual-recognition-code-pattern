@@ -7,6 +7,7 @@ import Launch16 from '@carbon/icons-react/lib/launch/16';
 import LogoGithub24 from '@carbon/icons-react/lib/logo--github/24';
 
 import './styles/main.scss';
+import useScript from './hooks/useScript';
 import Header from './components/Header';
 import ServiceContainer from './components/ServiceContainer';
 import { description, title } from './data/input.json';
@@ -56,15 +57,21 @@ const HEADER_LINKS = [
   </Link>,
 ];
 
-export const App = () => (
-  <div className="app-container">
-    <Header
-      description={description}
-      links={HEADER_LINKS}
-      title={title}
-    />
-    <ServiceContainer />
-  </div>
-);
+export const App = () => {
+  useScript(
+    'https://cdn.jsdelivr.net/gh/watson-developer-cloud/watson-developer-cloud.github.io@master/analytics.js',
+  );
+
+  return (
+    <div className="app-container">
+      <Header
+        description={description}
+        links={HEADER_LINKS}
+        title={title}
+      />
+      <ServiceContainer />
+    </div>
+  );
+}
 
 export default App;
