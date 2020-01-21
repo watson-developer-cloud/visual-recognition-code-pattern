@@ -24,7 +24,6 @@
     "carbon-components": "^10.9.0",
     "carbon-components-react": "^7.9.0",
     "carbon-icons": "^7.0.7",
-    "carbon-themes": "^1.7.0",
     "concurrently": "^5.0.2",
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.4.0",
