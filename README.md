@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">🗣 Visual Recognition Code Pattern </h1>
+<h1 align="center" style="border-bottom: none;"> Visual Recognition Code Pattern :camera: </h1>
 <h3 align="center">The Visual Recognition service uses deep learning algorithms to analyze images for scenes, objects, text, and other subjects.</h3>
 <p align="center">
   <a href="http://travis-ci.org/watson-developer-cloud/visual-recognition-code-pattern">
