@@ -57,7 +57,7 @@ app.post('/api/classify', async (req, res, next) => {
   }
   const classifyParams = {
     imagesFile: imageFile,
-    classifier_ids: ['default']
+    classifierIds: ['default']
   };
   try {
     const response = await client.classify(classifyParams);
