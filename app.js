@@ -31,6 +31,7 @@ try {
   client = new VisualRecognitionV3({
     // Remember to place the credentials in the .env file. Read the README.md file!
     version: '2018-03-19',
+    serviceName: 'visual_recognition'
   });
 } catch (err) {
   console.error('Error creating service client: ', err);

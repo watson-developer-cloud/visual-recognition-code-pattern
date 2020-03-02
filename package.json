@@ -11,7 +11,7 @@
     "express-rate-limit": "^5.0.0",
     "express-secure-only": "^0.2.1",
     "helmet": "^3.21.2",
-    "ibm-watson": "^5.2.1",
+    "ibm-watson": "^5.4.0",
     "morgan": "^1.9.1",
     "react-dropzone": "^10.2.1",
     "uuid": "^3.3.3"
