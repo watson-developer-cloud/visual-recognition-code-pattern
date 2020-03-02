@@ -18,6 +18,7 @@ RUN npm run test:components
 
 FROM base as release
 
+COPY --from=build /app/public /app/public
 COPY --from=build /app/build /app/build
 COPY --from=build /app/config /app/config
 COPY --from=build /app/*.js* /app/
