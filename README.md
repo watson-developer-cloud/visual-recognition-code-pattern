@@ -65,7 +65,7 @@ Copy the credential file to the application folder.
     Example _.env_ file that configures the `apikey` and `url` for a Watson Visual Recognitions service instance hosted in the US East region:
 
     ```
-    WATSON_VISION_COMBINED_IAM_APIKEY=X4rbi8vwZmKpXfowaS3GAsA7vdy17Qh7km5D6EzKLHL2
+    WATSON_VISION_COMBINED_APIKEY=X4rbi8vwZmKpXfowaS3GAsA7vdy17Qh7km5D6EzKLHL2
     WATSON_VISION_COMBINED_URL=https://gateway-wdc.watsonplatform.net/visual-recognition/api
     ```
 
