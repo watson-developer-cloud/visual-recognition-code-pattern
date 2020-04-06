@@ -10,7 +10,7 @@ const os = require('os');
 require('dotenv').config({
   silent: true
 });
-let pEnv = process.env;
+const pEnv = process.env;
 if (!pEnv.VCAP_SERVICES && !pEnv.WATSON_VISION_COMBINED_APIKEY && !pEnv.WATSON_VISION_COMBINED_URL && !pEnv.WATSON_VISION_COMBINED_USERNAME) {
   // Not finding creds from .env or CF or CPD, so maybe it's a starter kit.
   // Put the starter kit apikey and url into the expected environment vars.
