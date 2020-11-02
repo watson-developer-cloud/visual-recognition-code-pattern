@@ -46,14 +46,21 @@ app.get('/health', (req, res) => {
 
 app.post('/api/classify', async (req, res, next) => {
   let imageFile;
+  let temp
   if (req.body.image_file) {
     imageFile = fs.createReadStream(`public/${req.body.image_file}`);
   }
   else if (req.body.image_data) {
-    const resource = parseBase64Image(req.body.image_data);
-    const temp = path.join(os.tmpdir(), `${uuid.v4()}.${resource.type}`);
-    fs.writeFileSync(temp, resource.data);
-    imageFile = fs.createReadStream(temp);
+    try {
+      const resource = parseBase64Image(req.body.image_data);
+      temp = path.join(os.tmpdir(), `${uuid.v4()}.${resource.type}`);
+      fs.writeFileSync(temp, resource.data);
+      imageFile = fs.createReadStream(temp);
+    } catch (err) {
+      console.error('Error creating image file: ', err);
+      next(err);
+      return;
+    }
   }
   const classifyParams = {
     imagesFile: imageFile,
@@ -74,6 +81,17 @@ app.post('/api/classify', async (req, res, next) => {
       next(error);
     }
     next(err);
+  } finally {
+    if (temp) {
+      fs.unlink(temp, (err) => {
+        if (err) {
+          console.error(err)
+          return
+        }
+        
+        //file removed
+      })
+    }
   }
 });
 
