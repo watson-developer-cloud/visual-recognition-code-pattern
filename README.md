@@ -1,3 +1,10 @@
+<h1 style="font-weight: bold;"># DEPRECATED</h1>
+<h2>
+  This code pattern is no longer supported. You can find the newly supported Visual Recognition Code Pattern
+  <a href="https://github.com/IBM/visual-recognition-code-pattern">
+    here.
+  </a>
+</h2>
 <h1 align="center" style="border-bottom: none;"> Visual Recognition Code Pattern :camera: </h1>
 <h3 align="center">The Visual Recognition service uses deep learning algorithms to analyze images for scenes, objects, text, and other subjects.</h3>
 <p align="center">
